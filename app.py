@@ -5,7 +5,7 @@ import random
 app = FastAPI(
     title="DevOps Demo App",
     description="FastAPI application for DevOps training",
-    version="1.0.1"
+    version="1.0.0"
 )
 
 # A list of random DevOps tips and jokes:
