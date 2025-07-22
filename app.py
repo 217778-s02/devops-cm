@@ -56,4 +56,7 @@ def read_root():
     }
 @app.get("/login", summary="Login Route")
 def get_devops_tip():
-return {"status": "authenticated"}
+    return {"status": "authenticated"}
+@app.get("/logout", summary="Logout Route")
+def logout():
+    return {"status": "logged out"}
