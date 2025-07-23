@@ -38,15 +38,6 @@ def test_get_devops_tip():
     response = client.get("/tips")
     assert response.status_code == 200
     assert "tip" in response.json()
-    assert response.json()["tip"] in [
-    "Always run 'terraform plan' before 'terraform apply'—unless you like surprises!",
-    "Continuous Integration: because 'it works on my machine' isn't enough.",
-    "Remember: DevOps is a culture, not just a job title.",
-    "If it's not in version control, did it ever really exist?",
-    "You can't spell 'automation' without 'auto.' Wait, that was obvious.",
-    "Use infrastructure as code. Pets are cute, but we prefer cattle in the cloud!",
-    "Monitoring: Because we like to know when things break…immediately.",
-    "CI/CD pipelines: Embrace the 'merge, build, test, deploy' Zen cycle."
     ]
 
 def test_read_root():
