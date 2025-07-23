@@ -5,7 +5,7 @@ import random
 app = FastAPI(
     title="DevOps Demo App",
     description="FastAPI application for DevOps training",
-    version="1.0.1"
+    version="1.0.0"
 )
 
 # A list of random DevOps tips and jokes:
@@ -67,3 +67,5 @@ def logout():
 # Branch1 changes
 # Branch2 changes
 # Branch3 changes
+
+# Test comment. This has no impact on the unit tests
